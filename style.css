@@ -1,0 +1,135 @@
+*{ /*THE PROPERTIES COMMON TO ALL THE ELEMENTS*/
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:black;
+}
+
+header{ /*Properties applied to both img and logo*/
+    top:0;
+    left:0;
+    width:100%;
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 2;
+}
+
+header .logo{ /*Properties for HOTEL DE GLACE (logo class)*/
+    position:relative;
+    font-size: 3em;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-decoration: none ;
+}
+
+header .toggle img{ /*fitting whole image inside the toggle container*/
+    max-width: 100%; 
+    filter: invert(1); 
+}
+
+header .toggle{
+    max-width: 40px; /*now adjusting size of toggle container to adjust size of image*/
+    cursor: pointer;
+}
+
+.banner{
+    position:relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.banner .textBox{
+    position:relative;
+    max-width: 550px;
+    z-index: 2;
+}
+
+.banner .textBox h2{
+    color: white;
+    text-decoration:underline;
+    font-size: 2em;
+}
+
+.banner .textBox h3{
+    color: white;
+    font-size: 1.3em;
+    
+}
+
+.banner .textBox p{
+    color: whitesmoke;
+    font-size: 1.1em;
+    margin: 10px 0 25px;
+}
+
+.banner .textBox a{
+    position: relative;
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.banner .videoBox{
+    position:relative;
+    background: white;
+    width:100%;
+    height:400px;
+    z-index: 1;
+    margin-left: 60px;
+}
+
+.banner .videoBox video{
+    opacity: 1;
+}
+
+.banner .social{
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    justify-content:center;
+    align-items:end;
+    
+    
+}
+
+.banner .social li{
+    list-style: none;
+}
+
+.banner .social li a{
+    display: inline-block;
+    margin-right: 0.3px;
+}
+
+.banner .social li a img{
+    width:100%;
+    height: 40px;
+    filter: invert(1);
+}
